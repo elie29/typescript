@@ -1,0 +1,19 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Typescript demo project",
+  "private": true,
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "watch": "npm run clean && tsc -w",
+    "test": "npm run build && node dist/app.js"
+  },
+  "author": "Elie NEHME",
+  "license": "ISC"
+}

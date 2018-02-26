@@ -1,0 +1,12 @@
+/**
+ * https://www.typescriptlang.org/docs/handbook/compiler-options.html
+ */
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "outDir": "dist",
+    "moduleResolution": "node"
+  }
+}
