@@ -1,8 +1,11 @@
-import { Report } from './Report/Report';
-import { pad } from './utils/string';
+import { TabbedReport } from './Report/TabbedReport';
 
-let values = ['Alice Green', 'Ben Lesh', 'John Travolta'];
-values = values.map(value => pad(value, 15, '*'));
-
-const r = new Report(values);
+const values = [
+  ['Name', 'Gender', 'Age'],
+  ['----', '------', '---'],
+  ['Alice Green', 'Female', 55],
+  ['Paul Pfifer', 'Male', 26],
+  ['Louis Blakenship', 'Male', 44]
+];
+const r = new TabbedReport(values);
 r.run();
